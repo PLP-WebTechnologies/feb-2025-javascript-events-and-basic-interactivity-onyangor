@@ -1,6 +1,6 @@
 // Button Event
 document.getElementById("magicBtn").addEventListener("click", () => {
-    alert("🎉 Magic Click!");
+    alert(" Magic Click!");
   });
   
   // Image Slideshow with Fade Transition
