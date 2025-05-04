@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Interactive Web Assignment 🎯</h1>
+
+  <!-- Button with animation and event -->
+  <button id="magicBtn">Click me!</button>
+
+  <!-- Image Gallery / Slideshow -->
+  <section class="gallery">
+    <img id="slide" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&h=200&fit=crop" alt="Slide Image" />
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+  </section>
+
+  <!-- Tabs / Accordion -->
+  <section class="tabs">
+    <button class="tab" onclick="openTab(event, 'Tab1')">Tab 1</button>
+    <button class="tab" onclick="openTab(event, 'Tab2')">Tab 2</button>
+
+    <div id="Tab1" class="tabContent">This is Tab 1 content.</div>
+    <div id="Tab2" class="tabContent">This is Tab 2 content.</div>
+  </section>
+
+  <!-- Modal Trigger -->
+  <button id="modalBtn">Open Modal</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <p>This is a modal window!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
